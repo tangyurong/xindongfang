@@ -3,27 +3,27 @@ package com.xdf.entity;
 
 public class Role {
 
-  private long roleId;
-  private long roleTypeId;
+  private Integer roleId;
+  private Integer roleTypeId;
   private String roleLevelRelationShip;
   private String roleName;
   private String rights;
 
 
-  public long getRoleId() {
+  public Integer getRoleId() {
     return roleId;
   }
 
-  public void setRoleId(long roleId) {
+  public void setRoleId(Integer roleId) {
     this.roleId = roleId;
   }
 
 
-  public long getRoleTypeId() {
+  public Integer getRoleTypeId() {
     return roleTypeId;
   }
 
-  public void setRoleTypeId(long roleTypeId) {
+  public void setRoleTypeId(Integer roleTypeId) {
     this.roleTypeId = roleTypeId;
   }
 
