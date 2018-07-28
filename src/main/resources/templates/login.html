@@ -62,19 +62,19 @@
 
 <div id="tab">
     <ul class="tab_menu">
-        <li class="selected">学生登录</li>
-        <li>导师登录</li>
-        <li>教务登录</li>
+        <li class="selected">员工登录</li>
+        <li>财务登录</li>
+        <li>领导登录</li>
     </ul>
     <div class="tab_box">
-        <!-- 学生登录开始 -->
+        <!-- 员工登录开始 -->
         <div>
             <div class="stu_error_box"></div>
             <form action="" method="post" class="stu_login_error">
                 <input type="hidden" value="a" name="id"/>
                 <div id="username">
-                    <label>学&nbsp;&nbsp;&nbsp;号：</label>
-                    <input type="text" name="username" placeholder="输入学号"/>
+                    <label>账&nbsp;&nbsp;&nbsp;号：</label>
+                    <input type="text" name="username" placeholder="输入账号"/>
                 </div>
                 <div id="password">
                     <label>密&nbsp;&nbsp;&nbsp;码：</label>
@@ -85,15 +85,15 @@
                 </div>
             </form>
         </div>
-        <!-- 学生登录结束-->
-        <!-- 导师登录开始-->
+        <!-- 员工登录结束-->
+        <!-- 财务登录开始-->
         <div class="hide">
             <div class="tea_error_box"></div>
             <form action="" method="post" class="tea_login_error">
                 <input type="hidden" value="b" name="id"/>
                 <div id="username">
-                    <label>教工号：</label>
-                    <input type="text" name="username" placeholder="输入教工号"/>
+                    <label>帐&nbsp;&nbsp;&nbsp;号：</label>
+                    <input type="text" name="username" placeholder="输入账号"/>
                 </div>
                 <div id="password">
                     <label>密&nbsp;&nbsp;&nbsp;码：</label>
@@ -104,15 +104,15 @@
                 </div>
             </form>
         </div>
-        <!-- 导师登录结束-->
-        <!-- 教务登录开始-->
+        <!-- 财务登录结束-->
+        <!-- 领导登录开始-->
         <div class="hide">
             <div class="sec_error_box"></div>
             <form action="" method="post" class="sec_login_error">
                 <input type="hidden" value="c" name="id"/>
                 <div id="username">
-                    <label>教务号：</label>
-                    <input type="text" name="username" placeholder="输入教务号"/>
+                    <label>帐&nbsp;&nbsp;&nbsp;号：</label>
+                    <input type="text" name="username" placeholder="输入帐号"/>
                 </div>
                 <div id="password">
                     <label>密&nbsp;&nbsp;&nbsp;码：</label>
@@ -123,7 +123,7 @@
                 </div>
             </form>
         </div>
-        <!-- 教务登录结束-->
+        <!-- 领导登录结束-->
     </div>
 </div>
 <!--<div class="bottom">©2014 Leting <a href="javascript:;" target="_blank">关于</a> <span>京ICP证030173号</span>  More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a><img width="13" height="16" th:src="@{/images/copy_rignt_24.png}" /></div>-->
@@ -156,7 +156,7 @@
                         }else if(id=="b"){
                             window.location.href="/doindex";
                         }else if(id=="c"){
-                            window.location.href="/doindex";
+                            window.location.href="/AdminIndex.do";
                         }
                     } else {
                         toastr.error("登录失败！");
