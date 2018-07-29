@@ -1,16 +1,10 @@
 package com.xdf.util;
 
 
-import com.alibaba.fastjson.JSON;
 //import com.bali.onbase.web.model.helperclass.LoginBuyerInfo;
 //import com.bali.onbase.web.vo.BuyerInfoVo;
 import org.apache.commons.lang3.StringUtils;
-import org.jasig.cas.client.authentication.AttributePrincipal;
-import org.jasig.cas.client.util.AbstractCasFilter;
-import org.jasig.cas.client.validation.Assertion;
-import org.springframework.util.Base64Utils;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.i18n.CookieLocaleResolver;
+        import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import sun.misc.BASE64Encoder;
 
 import javax.net.ssl.*;
@@ -31,11 +25,16 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.zip.GZIPInputStream;
 
+
 /**
  * @author justin
  * @since 2018年5月17日
  */
 public class CommonUtils {
+
+    public static Userinfo getUser(HttpSession session){
+        return  (Userinfo)session.getAttribute("user");
+    }
 
     /**
      * SHA1加密
